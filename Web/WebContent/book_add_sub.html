@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/book_add_sub.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<title>도서관 검색</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+<script src="js/main_book_list.js"></script>
+<script src="js/book_add_sub.js"></script>
+<script src="js/cookie.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div id="logo">
+				<h1>
+					<a href="main.html">FINGERBOOK 핑거북</a>
+				</h1>
+			</div>
+
+			<div id="top">
+				<ul id="top_menu">
+					<li class="cookie"></li>
+					<li>|</li>
+					<li><a href="join.html">JOIN US</a></li>
+					<li>|</li>
+					<li><a href="">MY PAGE</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="clear"></div>
+
+		<div id="left_box">
+			<aside>
+				<nav class="nav">
+					<ul>
+						<li id="gnb01"><a href=""> <span
+								class="material-icons md-36">face</span> 회원 정보
+						</a></li>
+						<li id="gnb02"><a href="my_library.html"> <span
+								class="material-icons md-36">import_contacts</span> 나의 서재
+						</a></li>
+						<li id="gnb03"><a href="book_record.html"> <span
+								class="material-icons md-36">create</span> 독서 기록
+						</a></li>
+						<li id="gnb04"><a href=""> <span
+								class="material-icons md-36">insert_chart_outlined</span> 독서 통계
+						</a></li>
+						<li id="gnb05"><a href="book_alarm.html"> <span
+								class="material-icons md-36">notifications_none</span> 독서 알림
+						</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<div id="service">
+				<h6>FINGERBOOK SERVICE</h6>
+				<ul id="service_btn">
+
+					<li id="btn2"><a href="local_libr.html">
+							<p id="btn_txt2">
+								우리동네 공공도서관 <span class="material-icons md-30">navigate_next</span>
+							</p>
+					</a></li>
+
+					<li id="btn3"><a href="book_add.html">
+							<p id="btn_txt3">
+								도서 추가 하기 <span class="material-icons md-30">navigate_next</span>
+							</p>
+					</a></li>
+				</ul>
+			</div>
+			<!--service-->
+		</div>
+		<!--leftbox-->
+
+
+		<div id="right_box">
+			<div class="main_wrap">
+				<div id="main_img">
+					<img src="img/book_add_main_img.png">
+				</div>
+				<div id="main_txt01">
+					<p>도서 추가하기</p>
+				</div>
+				<div id="main_txt02">
+					<p>검색을 통해 원하는 도서를 검색하고 서재에 추가하세요.</p>
+				</div>
+			</div>
+
+			<div id="contents">
+				<h6>도서 추가 > 도서 목록 > 상세 보기</h6>
+				<div id="book_sub">
+					<!----교체해야 될 부분----->
+					<table class="table_wrap" id="book_sub_info">
+						<!-- 결과 값 -->
+					</table>
+					<!--table_wrap-->
+				</div>
+				<!-- book_sub -->
+
+				<div class="reco">
+					<!--추천목록-->
+					<h6>추천 도서 1위 - 10위</h6>
+					<div class="swiper-container">
+						<div class="swiper-wrapper" id="recommend_book_list">
+		
+						</div>
+					</div>
+				</div>
+				<!--추천목록-->
+			</div>
+			<!--contents-->
+		</div>
+		<!--rightbox-->
+
+		<div class="clear"></div>
+
+		<footer>
+			<div>FingerFoots</div>
+			<div class="line"></div>
+			<div>Copyrights</div>
+		</footer>
+	</div>
+	<!--wrap-->
+
+</body>
+</html>

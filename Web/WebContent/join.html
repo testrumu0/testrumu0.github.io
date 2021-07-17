@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="js/join.js"></script>
+    </head>
+    <title>JOIN US</title>
+    <body>
+    <div class="wrap">
+          <form id="join_form" name="join_form" action="../../FingerBook/join_ok.php" method="post">
+            <table>
+               <tr><td colspan='3'><a href=""><h3>FINGERBOOK</h3></a></td></tr>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" id="user_id" name="user_id"></td>
+                    <td class="check_txt"><p>사용할 수 있는 아이디입니다.</p></td>
+                    <td class="id_check"><input type="button" id="check_id" class="button" value="아이디 중복확인"/></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" id="user_pw" name="user_pw" maxlength="10"/></td>
+                    <td><p>4 - 6 자리까지 입력</p></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" id="user_name" name="user_name" maxlength="10"/></td>
+                </tr>
+                <tr>
+                    <td>E-MAIL</td>
+                    <td><input type="email" id="user_email" name="user_email" maxlength="20"/></td>
+                </tr>
+                 <tr>
+                    <td>H.P</td>
+                    <td><input type="tel" id="user_ph" name="user_ph" maxlength="20"/></td>
+                    <td><p>'-' 없이 숫자만 입력</p></td>
+                </tr>
+                <tr>
+                    <td>알림설정</td>
+                    <td><input type="radio" name="alarm_chk" id="y" value="y">YES</td>
+                    <td><input type="radio" name="alarm_chk" id="n" value="n">NO</td>
+                </tr>               
+                <tr><td colspan='3'><input type="submit" id="join_us" value="가입하기"/></td></tr>
+            </table>
+         </form>     
+    </div>
+	<div id="message"></div>
+
+    </body>
+    
+</html>

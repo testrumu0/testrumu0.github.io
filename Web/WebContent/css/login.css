@@ -1,0 +1,94 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'NanumSquare', sans-serif;
+    text-decoration: none;
+ }
+a,a:active,a:visited,a:hover{ /*hover는 차후 변경*/
+    color:#fff;
+    text-decoration: none;
+}
+
+body{
+	width:100%;
+    background: #3b3759;
+}
+
+.button{
+    border: none;
+    color: #fff;
+    background: #aa5377;
+    border-radius: 5px;
+}
+
+
+table{
+    margin: 200px auto 50px auto;
+    color: #fff;
+}
+
+td{
+    padding: 8px 5px 0 0;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#login{
+    height: 50px;
+    width: 65px;
+}
+
+#user_pw{
+    font-family: Noto-Sans;
+}
+
+h4{
+    margin-top: 15px;
+    text-align: center;
+    border-top : solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    padding: 8px 0;
+    color: #fff;
+}
+
+p{
+    font-size:12px;
+}
+
+#check_id{
+    font-size: 13px;
+    padding: 4px;
+}
+
+#join_us{
+    border:none;
+    background: none;
+    width: 326px;
+    text-align: center;
+    border-top : solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    margin-top: 15px;
+    padding: 8px 0;
+    color: #fff;
+}
+
+#message{
+	text-align:center;
+}
+
+.id_check.ok{ /*id체크 완료시 버튼 사라짐*/
+	display: none;
+}
+
+.check_txt{
+	display: none;
+}
+
+.check_txt.on{ /*id체크 완료시 텍스트 나타남*/
+	color:#aa5377;
+	font-size:12px;
+}

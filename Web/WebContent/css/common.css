@@ -1,0 +1,235 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'NanumSquare', sans-serif;
+    text-decoration: none;
+
+ }
+a,a:active,a:visited,a:hover{ /*hover는 차후 변경*/
+    color:#000;
+    text-decoration: none;
+}
+.clear{clear:both;}
+body{
+    width:100%;
+}
+
+#wrap{
+    /*1920에서 양옆 margin 60(총 120)을 뺌*/
+/*    width: 1800px; height: 1730px;*/
+    width: 1800px;
+    margin: 0 auto;   
+
+}
+
+
+h6 { /*부메뉴 제목들 예)FINGERBOOKSERVICE,도서검색,베스트셀러*/
+    font-size: 26px;
+    margin-bottom: 40px;
+    padding-left:18px;
+}
+
+/*아이콘 구글 링크 연결함.
+md-36:nav li md-30:service li 옆 화살표, 회원정보 아래 화살표*/
+
+.material-icons.md-36 {
+    padding: 0 28px 0 27px;
+    text-transform: none;
+    letter-spacing: normal;
+    position: relative;
+    top:8px;
+    font-size: 36px; 
+}
+.material-icons.md-30{
+    position: relative;
+    top:8px;
+    font-size: 30px;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+/*-----------------header---------------------*/
+header{
+    width: 100%;
+    height: 150px;
+}
+#logo{
+    float:left;
+    margin: 45px 0 46px 0;
+    width: 303px;
+    height: 39px;   
+}
+#top{
+    float:right;
+    margin: 45px 0 46px 0;
+}
+#top_menu>li{
+    float:left;
+    padding-left: 15px;
+    
+}
+
+/*--------------left_box-GNB----------------*/
+#left_box{
+    float: left;
+    margin-right: 40px;
+    width : 303px;
+    height: 1071px;
+    font-size: 22px;
+}
+
+.nav>ul>li {
+    width: 304px;
+    height: 71px;
+    margin-bottom:40px;
+    padding-top: 10px;
+}
+
+/*FINGERBOOK SERVICE*/
+#service_btn>li{
+    width: 303px;
+    height: 77px;
+    margin-bottom: 30px;
+    color: #fff;
+    border-radius: 8px;
+}
+#service_btn>li>a>p{
+    padding: 15px 0 0 26px;
+    color: #fff;
+}
+
+#btn1{   
+    background: #7aacb3;    
+}
+#btn_txt1>span{
+    padding-left: 54px; 
+}
+#btn2{
+    background: #aa5377;
+}
+#btn_txt2>span{
+    padding-left: 38px; 
+}
+#btn3{
+    background: #4c6281;
+}
+#btn_txt3>span{
+    padding-left: 90px; 
+}
+
+/*--------------END--left_box-GNB----------------*/
+
+/*----------------right_box---------------------*/
+#right_box{
+    font-size: 22px;
+    margin: 0;
+    float: right;
+    width: 1455px;
+    
+}
+/*--------------------main_img----------------*/
+.main_wrap{
+    position: relative;
+    margin-bottom: 65px;
+    width: 1455px;
+    height: 285px;  
+}
+#main_img{
+ vertical-align: middle;
+}
+#main_txt01{
+    position: absolute;
+    top:40%;
+    left:5%;
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+}
+#main_txt02{
+    position: absolute;
+    top:58%;
+    left:5%;
+    font-size: 22px;
+    color: #fff;
+}
+/*-----------END------main_img----------------*/
+
+/*-----------SEARCH_BOX----------------*/
+#search{
+     width: 1455px;
+     height: 214px;   
+}
+#search_bar{
+    height: 85px;
+}
+#cat{ /*카테고리*/
+    float:left;
+}
+#s_key{
+    padding:0 10px;
+    width:230px;
+    height: 85px;
+    background: #cf8da7;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    line-height: 17px;
+}
+#search_btn{
+    float: left;
+    position: relative;
+    display: flex;
+    width:1224px;
+}
+.searchTerm {
+  width: 100%;
+  border-bottom: 2px solid #cf8da7;
+  border-right: none;
+  border-left: none;
+  border-top: none;    
+  padding: 5px;
+  height: 73px;
+  outline: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.searchTerm:focus{
+  font-size: 22px;
+}
+
+.searchButton {
+  width: 189px;
+  height: 85px;
+  border: none;
+  background: #cf8da7;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/*-----------------footer----------------------*/
+footer{
+    margin-top: 65px;
+    background: #3b3759;
+    width:100%;
+    height: 202px;
+    color: #fff;
+    font-size: 21px;
+}
+footer>div{
+    position: relative;
+    top:50%;
+    left:5%;
+    display: inline-block;
+}
+.line{
+    width:1400px;
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+}

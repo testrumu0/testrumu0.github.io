@@ -1,0 +1,68 @@
+
+/*---------------베스트셀러----------------*/
+#contents{
+    height: 1130px;
+}
+#contents>h6{
+    padding: 0 750px 0 18px;
+    height: 77px;
+    float: left;
+}
+
+
+/*------------도서 목록 table---------------*/
+
+table{   
+    margin: 0 auto;
+    border: collapse;
+    text-align: center;
+    align-content: center;
+}
+.table_wrap, .tab_cont{
+    width: 1423px;
+    margin-bottom: 65px;
+}
+.tab_cont{
+	display:none;
+}
+#tr_wrap01, #tr_wrap02, #tr_wrap03{
+    height: 350px;
+}
+.tr_wrap{
+    height: 350px;
+}
+
+.book_wrap{
+    width: 250px;
+}
+
+.bookli_img{
+    width: 150px;
+    height: 227px;
+}
+
+.bookli_img>a>img{
+    width: 150px;
+    height: 227px;
+}
+.bookli_title{
+    padding-top: 10px;
+    font-size: 22px;
+}
+.bookli_txt{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+/*------------my_library tab_bar---------------*/
+
+.tabs{
+    height: 77px;
+}
+.tabs>li{
+    float: right;
+    padding: 0 18px;
+    overflow:hidden;
+    position:relative;
+}
+
