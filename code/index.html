@@ -1,0 +1,172 @@
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+       <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/common.js" type="text/javascript"></script>       
+        <link rel="stylesheet" href="css/common.css">
+        
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <title>WELCOME</title>
+    </head>
+    <body>
+    <div class="wrap">
+<!--
+       <header>
+           <ul>
+               <li>PORTFOLIO</li>
+               <li>MENU</li>
+               <li><img src="img/m_icon.jpg"></li>
+           </ul>
+       </header>
+-->
+    <div id = "fullpage">
+     <div class="quick" id ="quick">
+           <ul>
+               <li class="on">HOME</li>
+               <li>ABOUT</li>
+               <li>SKILLS</li>
+               <li>PORTFOLIO</li>
+               <li>CONTACT</li>
+           </ul>
+     </div>
+       <!---HOME--->
+        <div class="box sec1">
+            <div class="sec_title" id="sec1_title"><span>CHA</span> SERAN
+            <br><p id="sec1_sub_title">Web Front-End Developer</p></div>
+            <div class="sec_txt" id="sec1_txt">
+                <p>
+                  기술은 빠르게 그리고 새롭게 발전해 나아가고 있습니다. 이에 맞춰 개발자 또한 현재에 안주하지 않고 새로운 것에 대해 탐구하고 배우기 위한 자세가 필요하다고 생각합니다. 사소한 의견에서도 큰 변화의 기회를 얻게 될 수 있기에 언제나 상대방의 말에 귀기울이<br>며 현재에 안주하지 않고 더 효율적인 방법을 찾아가는 개발자가 되겠습니다.  
+                </p>
+            </div>
+        </div>
+       <!---ABOUT---> 
+        <div class="box sec2">
+            <div class="sec_title" id="sec2_title"><span>ABOUT</span> ME
+            </div>
+            <div class="sec_txt" id="sec2_txt">
+               <ul class="sec2_sub">
+                 <li class="sec2_sub_title">
+                  <ul>
+                   <li>Profile</li>
+                   <li>Education</li>
+                   <li>License</li> 
+                  </ul>
+                </li>
+                <li class="sec2_sub_li">
+                   <ul>
+                    <li>Name / 차세란<br><p>Birth / 1995.03.15</p></li>
+                    <li>2018.03 - 2021.02 / 신구대학교 IT 소프트웨어 전공</li>
+                    <li>2016.08.12 / GTQ 포토샵 1급<br><p>2021.06.02 / 정보처리 산업기사</p></li>
+                   </ul>
+                </li>  
+               </ul>               
+            </div>           
+        </div>
+        <!---SKILLS--->
+        <div class="box sec3">
+            <div class="sec_title" id="sec3_title">WEB</div>
+                <div class="bar-container">
+                    <h2>HTML5</h2>
+                    <progress class="progressbar" id="progress1" value="0" max="100"></progress>
+                    <span class="hidden_txt" style="right: 33%;">70%</span>
+                    <h2>jQuery</h2>
+                    <progress class="progressbar" id="progress2" value="0" max="100"></progress>
+                    <span class="hidden_txt" style="right: 53%;">50%</span>
+                    <h2>SQL</h2>
+                    <progress class="progressbar" id="progress3" value="0" max="100"></progress>
+                    <span class="hidden_txt" style="left: 47%;">60%</span>
+                </div>
+                <div class="bar-container">
+                    <h2>CSS3</h2>
+                    <progress class="progressbar" id="progress4" value="0" max="100"></progress>
+                    <span class="hidden_txt" style="right:33%;">70%</span>
+                    <h2>PHP</h2>
+                    <progress class="progressbar" id="progress5" value="0" max="100"></progress>
+                    <span class="hidden_txt" style="right: 53%;">50%</span>
+                    <h2>JAVA</h2>
+                    <progress class="progressbar" id="progress6" value="0" max="100"></progress>
+                    <span class="hidden_txt" style="right: 53%;">50%</span>
+                </div>              
+        </div>
+        <!---PORTFOLIO--->
+        <div class="box sec4">
+            <div class="sec_title" id="sec4_title">PORTFOLIO</div>
+            <div id="newSwiper" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <div class="sec4_num">01</div>
+                        <ul class="swiper_con">
+                            <li>WEB APPLICATION</li>
+                            <li>FINGER BOOK</li>
+                            <li>웹페이지 기획 및 제작, API 사용, DB구축</li>
+                            <li class="sec4_btn">VIEW CODE</li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                       <div class="sec4_num">02</div>
+                        <ul class="swiper_con">
+                            <li>WEB APPLICATION</li>
+                            <li>MINIMUM</li>
+                            <li>웹페이지 리뉴얼, DB구축</li>
+                            <li class="sec4_btn">VIEW CODE</li>
+                        </ul> 
+                    </div>
+                    <div class="swiper-slide">
+                       <div class="sec4_num">03</div>
+                        <ul class="swiper_con">                          
+                            <li>WEB APPLICATION</li>
+                            <li>HEY!CALANDER</li>
+                            <li>웹페이지 기획 및 제작, API 사용, DB구축</li>
+                            <li class="sec4_btn">VIEW CODE</li>
+                        </ul> 
+                    </div>
+                    <div class="swiper-slide">
+                       <div class="sec4_num">04</div>
+                        <ul class="swiper_con">
+                            <li>WEB DESIGN</li>
+                            <li>BALENCIAGA</li>
+                            <li>웹페이지 리뉴얼</li>
+                            <li class="sec4_btn">VIEW PAGE</li>
+                        </ul> 
+                    </div>
+                    <div class="swiper-slide">
+                       <div class="sec4_num">05</div>
+                        <ul class="swiper_con">
+                            <li>MOBILE DESIGN</li>
+                            <li>방구석 라이프</li>
+                            <li>모바일 페이지 기획 및 디자인</li>
+                            <li class="sec4_btn">VIEW PAGE</li>
+                        </ul>
+                    </div>                    
+                </div><!--swiper-wrapper-->                              
+            </div><!--newSwiper-->
+       <div class="swiper-pagination"></div><!--paging-->
+       <div class="nav_btn">
+           <div class="swiper-button-prev"></div><!--navigation-->
+           <div class="swiper-button-next"></div>
+       </div>
+    </div>
+        <!---CONTACT--->
+        <div class="box sec5">
+            <div class="vertical_line"></div>
+            <div class="con_li">
+                <ul>
+                    <li><img src="img/github.png" alt="github"><span>https://github.com/testrumu0</span></li>
+                    <li><img src="img/mail.png" alt="mail"><span>serancha.dev@gmail.com</span></li>
+                    <li><img src="img/phone.png" alt="phone"><span>010.9612.9232</span></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--fullpage-->
+    
+    </div><!--wrap-->
+
+    </body>
+</html>
