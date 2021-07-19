@@ -34,12 +34,38 @@ html,body{
     font-family: 'S-CoreDream-3Light';
     font-size: 62.5%; /*단위rem*/
 }
+.wrap{
+    height: 100vh;
+}
+header{
+    margin-top: 4vh;
+    height: 8vh;
+    position: fixed;
+    width:100%;
+    z-index: 15;
+    font-family: 'S-CoreDream-5Medium';
+    font-stretch: ultra-expanded;
+    letter-spacing: 7;
+    font-size: 1.2rem;
+}
+header li:nth-child(1) {
+    float: left;
+    padding-left: 3vw;
+}
+header li:nth-child(2) {
+    padding-right: 3vw;
+    float: right;
+    color: #fff;   
+}
+header span{
+    padding-left: 1vw;
+}
 #fullpage {
     position:relative;
     top:0px;
     z-index:9;
     width:100%;
-    height:100%;
+    height:100vh;
 }
 .box {
     width:100%;
@@ -102,10 +128,11 @@ span{
     font-family: 'S-CoreDream-2ExtraLight';
 }
 #sec1_txt{
-    line-height:1.8;
+    line-height:1.9;
     letter-spacing: 0.3;
     word-spacing: 0.4;
     left: 23.5%;
+    font-size: 1.6rem;
 }
 /*ABOUTME*/
 .sec2{
@@ -113,6 +140,7 @@ span{
 }
 #sec2_txt {
     left: 27%;
+    font-size: 1.6rem;
 }
 .sec2_sub > li{
     float: left;
