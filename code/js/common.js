@@ -60,11 +60,6 @@ $(document).ready(function() {
 			if(page.index() <= $(".quick ul li").size()-1){ 
 				page.next().addClass("on").siblings(".on").removeClass("on");
 			}
-			if(onpage == 4 || onpage == 5){//sec5에서만 글자색 변경
-                document.getElementById('quick').style.color="#fff";
-            }else{
-                document.getElementById('quick').style.color="#000";
-            }
 			if(nextPage < lastPageNum){ //마지막 페이지가 아닐때만 animate !
 				var pagelength=0;
 				for(var i = 1; i<(nextPage+1); i++){ 
@@ -97,34 +92,6 @@ $(document).ready(function() {
     
   }//ENDfullset
  
-
-//progressBar
-    function tag(num,endValue){//num,endValue매개변수추가
-        var progressbar = $('#progress'+num),//제어
-        max = progressbar.attr('max'),
-        time = (1000/max)*4,
-        end = max*endValue,//제어
-        value = progressbar.val();
-
-      var loading = function() {
-          value += 1;
-          addValue = progressbar.val(value);
-
-          $('.progress-value').html(value + '%');
-
-          if (value == end) {
-              clearInterval(animate);
-          }
-        
-      }
-
-      var animate = setInterval(function() {
-          loading();       
-      }, time);
-        
-
-    }//END progressBar    
-
     //SwiperSetting
    var swiperSetting = {
       slidesPerView: 'auto',
@@ -139,9 +106,9 @@ $(document).ready(function() {
 //      centeredSlides: true,
 //      loop: true,
 //      loopedSlides: 2,
-      spaceBetween : 37,
-      slidesOffsetBefore : 20, // 슬라이드 시작 부분 여백
-      slidesOffsetAfter : 20, // 슬라이드 시작 부분 여백
+      spaceBetween : 1,
+      slidesOffsetBefore : 0, // 슬라이드 시작 부분 여백
+      slidesOffsetAfter : 0, // 슬라이드 시작 부분 여백
    } 
 
 
