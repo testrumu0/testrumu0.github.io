@@ -1,28 +1,3 @@
-/*FONT*/
-@font-face {
-     font-family: '2ExtraLight';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-}
-@font-face {
-     font-family: '3Light';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-}
-@font-face {
-     font-family: '4Regular';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-}
-@font-face {
-     font-family: '5Medium';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-}
 
 /*COMMON*/
 *{
@@ -82,6 +57,11 @@ header{
 .subMenu li:hover{
     color: #ff7235;
 }
+h1{
+    color: #ff7235;
+    font: 6.0rem '5Medium';
+    letter-spacing: 4;
+}
 
 #fullpage {
     position:relative;
@@ -120,15 +100,19 @@ header{
 }
 
 /*-------------HOME-------------*/
-h1{
-    color: #ff7235;
-    font: 6.0rem '5Medium';
-    letter-spacing: 4;
-}
 .sec1_title{
     position: relative;
     left: 12vw;
     top: 34vh;
+}
+.slide_txt{
+    transform: translateY(8vh);
+    opacity: 0;
+    transition: all 2s;
+}
+.is_visible{ /*텍스트효과*/
+    transform: translateY(0);
+    opacity: 1;
 }
 hgroup{
     position: absolute;
@@ -189,6 +173,7 @@ h5{
     top:0;
     right: 3vw;
     background-color: #fcf5ef;
+    display: none;
 }
 
 /*-------------SKILLS-------------*/
@@ -271,15 +256,20 @@ h5{
     top: 50vh;
 }
 .sec4_btn button{
-    border: none;
+    border: solid 1.3px #000;
     border-radius: 7px;
-    background-color: #ff7235;
+    background-color: #fcf5ef;
     width: 13vw;
     height: 8vh;
-    color: #fff;
+    color: #000;
     letter-spacing: 2;
 }
-.p_btn{/*뷰페이지 버튼*/
+.sec4_btn button:hover{
+    border: none;
+    background-color: #ff7235;
+    color: #fff;
+}
+.sec4_btn button:nth-child(even){/*뷰페이지 버튼*/
     margin-left: 2vw;
 }
 .sec4_img{

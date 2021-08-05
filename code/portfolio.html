@@ -1,0 +1,108 @@
+<html>
+    <head>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="css/font.css">
+        <title>PORTFOLIO</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font : 62.5% '5Medium';               
+            }
+            main{
+                margin-top: 15vh;            
+                letter-spacing: 3;
+            }
+            h1, h2{
+                margin: 0 auto;
+                text-align: center;
+            }
+            h1{
+                font-size: 4.5rem;   
+            }
+            h2{
+                font: 1.5rem '3Light';
+                color: #888;
+                margin-top: 2vh;
+            }
+            table{
+                margin: 8vh auto;
+                border: none;
+                border-spacing: 0;
+                text-align: center;               
+            }
+            td{
+                width: 16vw;
+                height: 31vh;
+                padding: 2vh 1vw;
+                background-color: #fff;
+                transition: all 0.45s ease;
+                cursor: pointer;
+            }
+            td > img{
+                backface-visibility: hidden; 
+            }
+            td:hover > img, td.hover > img {
+                opacity: 0.1;
+                backface-visibility: visible; 
+            }
+            
+            td:hover > h3, 
+            td.hover > h3,
+            td:hover > h5,
+            td.hover > h5{
+                opacity: 1;
+            }
+            
+            h3, h5{
+                opacity: 0;
+            }
+            h3{
+                font-size: 1.7rem;
+                position: relative;
+                top: 50%;
+                left: 0;
+                color: #000;
+            }
+            h5{
+                font: 1.2rem '4Regular';
+                position: relative;
+                top: 51%;
+                left: 0;
+                letter-spacing: 2;
+                color: #888;
+            }
+        </style>
+        <script>
+            $(".hover").mouseleave(
+              function() {
+                $(this).removeClass("hover");
+              }
+            );
+            
+            function myFunction() {
+              var myWindow = window.open("img/fingerbook.jpg", "", "width=1000, height=640", "scrollbars=yes");
+            }
+
+        </script>
+    </head>
+    <body>
+        <main>
+           <h1>PORTFOLIO</h1>
+           <h2>CHA SE RAN</h2>
+            <table>
+                <tr>
+                <td onclick="myFunction()"><h3>FINGERBOOK</h3><h5>WEB APPLICATION</h5><img src="img/pf01.jpg"></td>
+                <td onClick=""><h3>HEY!CALENDAR</h3><h5>WEB APPLICATION</h5><img src="img/pf02.jpg"></td>
+                <td onClick=""><h3>AMUSE</h3><h5>RESPOSIBLE WEB</h5><img src="img/pf03.jpg"></td>
+                </tr>
+                <tr>
+                <td onClick=""><h3>BALENCIAGA</h3><h5>WEB DESIGN</h5><img src="img/pf04.jpg"></td>
+                <td onClick=""><h3>MINIMUM</h3><h5>WEB DESIGN</h5><img src="img/pf05.jpg"></td>
+                <td onClick=""><h3>방구석라이프</h3><h5>MOBILE DESIGN</h5><img src="img/pf06.jpg"></td>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>

@@ -4,28 +4,21 @@ $(document).ready(function() {
 
     const slide = new Swiper('#newSwiper', swiperSetting);
     
+    animateSlideA();
+    
 });
 
 
     function fullset(){    
     var pageindex = $("#fullpage > .box").size();//fullpage 내의 섹션 개수 확인
     $("#fullpage .quick ul :first-child").addClass("on");//화면로드시 첫번째 항목에 클래스 적용
-    var is_action = true;
     //마우스 휠 이벤트
 	$(window).bind("mousewheel", function(event){       
 		var page = $(".quick ul li.on");
-        var onpage = page.index()+1;              
-                if(onpage == 2 && is_action){
-                   var bar = setTimeout(function(){ 
-                    tag(1,0.7);
-                    tag(2,0.5); 
-                    tag(3,0.6); 
-                    tag(4,0.7); 
-                    tag(5,0.5); 
-                    tag(6,0.5); 
-                }, 0);  
-                is_action = false;
-            }//sklls페이지에서만 tag함수 한번만 동작       
+        var onpage = page.index()+1;
+            if(onpage == 2){
+                $(".bg_box2").slideDown(2000, 'swing');
+            }
 		//alert(page.index()+1);  // 현재 on 되어있는 페이지 번호
 		if($("body").find("#fullpage:animated").length >= 1) return false;
 		//마우스 휠을 위로
@@ -70,7 +63,7 @@ $(document).ready(function() {
 				$("#fullpage").animate({"top": -pagelength + "px"},1000, "swing");
 			}
 			else{ // 현재 마지막 페이지 일때는
-				alert("마지막 페이지 입니다!");
+				alert("감사합니다!");
                 
 			};		
 			
@@ -92,7 +85,7 @@ $(document).ready(function() {
     
   }//ENDfullset
  
-    //SwiperSetting
+//SwiperSetting
    var swiperSetting = {
       slidesPerView: 'auto',
       pagination : {
@@ -110,12 +103,40 @@ $(document).ready(function() {
       slidesOffsetBefore : 0, // 슬라이드 시작 부분 여백
       slidesOffsetAfter : 0, // 슬라이드 시작 부분 여백
    } 
+   
+//AnimateText    
+    function animateSlideA() {
+        var slideA = $(".slide_txt");
+        slideA.each(function(i){
+             setTimeout(function () {
+                slideA.eq(i).addClass("is_visible");
+             }, 300*(i+1));              
+        });       
+   }
 
+function pagePop(url, i){
+    var nm = $('#p_btn'+i).attr('class');
+    var url = url;
+    var num = i;
+    alert(num);
+//    alert(nm);
+    if(num == 5){
+        var popup = window.open('', '_blank','width=390, height=667, scrollbars=no, menubar=no');
+        popup.document.write("<title>"+nm+"</title>");
+        popup.document.write("<iframe width='375' height='667' src='https://xd.adobe.com/embed/3d0e9b22-4258-4bc3-9f45-35ea5a3220d1-685d/' frameborder='0' allowfullscreen></iframe>");
+    }else{
+        var popup = window.open('', '_blank','width=900, height=640, scrollbars=yes');
+        popup.document.write("<title>"+nm+"</title>");
+        popup.document.write("<img src='"+url+"'>"); 
+    }
 
+}
 
-/*출처: https://100ah.tistory.com/12 [Hello 100A]
-       https://jineecode.tistory.com/77
-       https://ddorang-d.tistory.com/55 [도라미도라미] */
+/*출처: https://100ah.tistory.com/12 [Hello 100A] FullpageSlide
+       https://jineecode.tistory.com/77 Swiper
+       https://ddorang-d.tistory.com/55 [도라미도라미] Swiper
+       https://wsss.tistory.com/119 AnimateText
+        */
 
 
         

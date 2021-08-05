@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font : 62.5% '5Medium';
+}
+html,body{
+    width: 1024px;
+}
+main{
+    width: 100vh;
+}
+table{
+    border: none;
+    border-spacing: 0;
+    text-align: center;               
+}
+h1{
+    font-size: 2.5rem;
+}
+h5{
+    font: 1.2rem '4Regular';
+    letter-spacing: 2;
+    color: #000;
+}
+td img{
+    width: 31vw;
+}
+.main img{
+    width: 80vw;
+    align-content: center;
+}
