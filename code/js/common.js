@@ -118,7 +118,7 @@ function pagePop(url, i){
     var nm = $('#p_btn'+i).attr('class');
     var url = url;
     var num = i;
-    alert(num);
+//    alert(num);
 //    alert(nm);
     if(num == 5){
         var popup = window.open('', '_blank','width=390, height=667, scrollbars=no, menubar=no');
