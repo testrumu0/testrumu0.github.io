@@ -1,0 +1,239 @@
+<!doctype html5>
+<meta charset="UTF-8">
+<html>
+<title>balenciaga Main</title>
+<head>
+   <link rel="stylesheet" type="text/css" href="balenciaga_common.css">
+   <link rel="stylesheet" type="text/css" href="balenciaga_main.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+   <script  src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script>
+     $(function(){
+       $(window).scroll(function(){ //header
+   			if($(document).scrollTop()>=$('#main_header').outerHeight()){
+   				$('.gnb').addClass('navfix');
+   			}
+   			else{
+   				$('.gnb').removeClass('navfix');
+   			}
+   		});
+
+       function slideBanner(){ //mainbanner
+       var imgs=$('#slides').find('img');
+       var first=imgs.eq(0);
+       var second=imgs.eq(1);
+       second.fadeIn(300);
+         first.fadeOut(300,function(){
+           first.appendTo($('#slides'));
+         });
+       }
+       var timer=setInterval(slideBanner,2000);
+       var banner = $('#slides>img');
+       banner.on('mouseover',function(){
+         clearInterval(timer);
+       });
+       banner.on('mouseout', function(){
+          timer=setInterval(slideBanner,2000);
+        })
+
+        $('.shop1>#shop_cloth>li').each(function(){ //shop1
+    			var a=$(this);
+    			var img=a.find('img');
+    			var originsrc=img.attr('src');//기존 src 속성값을 변수originsrc에 담음
+    			var oversrc=originsrc.replace('_01','_02'); // originsrc 변수값에서 문자를 교체한 후 교체한 문자값을 oversrc에 담음
+    			a.on('mouseover focus', function(){
+    				img.attr('src',oversrc); // mouseover나 focus가 발생하였을 때 img의 src 속성값이 oversrc가 되게 함.
+    			});
+    			a.on('mouseout blur', function(){
+    				img.attr('src',originsrc); // mouseout나 blur가 발생하였을 때 img의 src 속성값이 originsrc가 되게 함.
+    			});
+    		});
+
+        $('.shop2>#shop_acc>li').each(function(){ //shop2
+    			var a=$(this);
+    			var img=a.find('img');
+    			var originsrc=img.attr('src');//기존 src 속성값을 변수originsrc에 담음
+    			var oversrc=originsrc.replace('_01','_02'); // originsrc 변수값에서 문자를 교체한 후 교체한 문자값을 oversrc에 담음
+    			a.on('mouseover focus', function(){
+    				img.attr('src',oversrc); // mouseover나 focus가 발생하였을 때 img의 src 속성값이 oversrc가 되게 함.
+    			});
+    			a.on('mouseout blur', function(){
+    				img.attr('src',originsrc); // mouseout나 blur가 발생하였을 때 img의 src 속성값이 originsrc가 되게 함.
+    			});
+    		});
+
+        $('.shape_banner>div').each(function(){ //shape_banner
+          var a=$(this);
+          var img=a.find('img');
+          var originsrc=img.attr('src');//기존 src 속성값을 변수originsrc에 담음
+          var oversrc=originsrc.replace('_01','_02'); // originsrc 변수값에서 문자를 교체한 후 교체한 문자값을 oversrc에 담음
+          a.on('mouseover focus', function(){
+            img.attr('src',oversrc); // mouseover나 focus가 발생하였을 때 img의 src 속성값이 oversrc가 되게 함.
+          });
+          a.on('mouseout blur', function(){
+            img.attr('src',originsrc); // mouseout나 blur가 발생하였을 때 img의 src 속성값이 originsrc가 되게 함.
+          });
+        });
+
+        $('section>ul>li').mouseenter(function(){   //mouseover대신 mouseenter쓰지 말것
+          $(this).find('.sub').stop().slideDown();
+        });
+        $('section>ul>li').mouseleave(function(){   //mouseleave대신 mouseout쓰지 말것
+          $(this).find('.sub').stop().slideUp();
+        });
+     });//end
+   </script>
+</head>
+<body>
+  <header id="main_header"><!--tnb-->
+    <ul id="top">
+      <li>Contact Us</li>
+      <li>KOREA</li>
+    </ul>
+<div class="clear"></div>
+  </header>
+  <nav class="gnb"><!--gnb-->
+    <section id="h_menu">
+      <ul id="h_left">
+          <li class="h_icon"><a href="#"><img src="images/icon/menu.png">
+            <div id="text">Menu</div></a>
+            <ul class="sub">
+              <li>WOMEN</li>
+              <li>MEN</li>
+              <li>KIDS</li>
+              <li><a href="balenciaga_sub02.html">BAGS</a></li>
+              <li><a href="balenciaga_sub01.html">SHOES</a></li>
+              <li>ACC</li>
+              <li>COLLECTION</li>
+            </ul>
+          </li><!--togglebar-->
+      </ul>
+      <ul class="logo">
+        <li id = "logo"><a href="#"><img src="images/m_logo.png"></a></li>
+      </ul>
+      <ul id="h_right">
+          <li class="h_icon"><i class="fas fa-search"></i></li> <!--login-->
+          <li class="h_icon"><i class="fas fa-shopping-bag"></i></li> <!--shopping bag-->
+          <li class="h_icon"><i class="fas fa-user"></i></li> <!--search-->
+      </ul>
+    </section>
+  </nav>
+<div class="clear"></div>
+  <main>
+      <div class="slide_container"><!--mainbanner-->
+    	<div id="slides">
+          <img src="images/m_banner1.png">
+          <img src="images/m_banner2.png">
+          <img src="images/m_banner3.png">
+      </div>
+    </div>
+      <div class="container">
+      <section class="shop1">
+        <h5>SHOP IN</h5>
+        <hr class="line">
+        <ul id="shop_cloth">
+          <li id="women"><a href="#"><img src="images/w_rtw_01.png"></a></li>
+          <li id="men"><a href="#"><img src="images/m_rtw_01.png"></a></li>
+          <li id="kids"><a href="#"><img src="images/kid_01.png"></a></li>
+        </ul>
+      </section>
+<div class="clear"></div>
+      <section class="shop2">
+        <ul id="shop_acc">
+          <li id="bag"><a href="balenciaga_sub02.html"><img src="images/bag_01.png"></a></li>
+          <li id="shoes"><a href="balenciaga_sub01.html"><img src="images/shoes_01.png"></a></li>
+        </ul>
+      </section>
+<div class="clear"></div>
+      <section class="shape_banner">
+        <h5>PRODUCTS</h5>
+        <hr class="line">
+        <div id="new"><a href="#"><img src="images/new_01.png"></a></div>
+        <div id="best"><a href="#"><img src="images/best_01.png"></a></div>
+        <div id="collec"><a href="#"><img src="images/collec_01.png"></a></div>
+      </section>
+<div class="clear"></div>
+      <section class="service">
+        <h5>ONLINE SERVICES</h5>
+        <hr class="line">
+        <div class="service_ban">
+          <div id="shipping">
+            <p class="ser_icon"><i class="fas fa-shipping-fast"></i></p>
+            <p class="ser_title">DELIVERY</p>
+            <p>Free standard delivery<br>
+              for every order.</p>
+          </div>
+          <div id="boxing">
+            <p class="ser_icon"><i class="fas fa-box"></i></p>
+            <p class="ser_title">GIFTING</p>
+            <p>Your order will be presented <br>
+              in an iconic Balenciaga gift box <br>
+              and accompanied by a personalised message.</p>
+          </div>
+          <div id="undo">
+            <p class="ser_icon"><i class="fas fa-undo"></i></p>
+            <p class="ser_title">RETURNS</p>
+            <p>Free returns within 14 days<br>
+              for every order.</p>
+          </div>
+        </div>
+      </section>
+    </div><!--container-->
+      <section class="find_store">
+        <div id="fts">
+          <h2><i class="fas fa-map-marker-alt"></i></h2>
+          <strong>Find a Store</strong>
+          <div id = "search_box"><div id="f_btn"><h5>Find<h5></div></div>
+          <p>Address,city,country</p>
+        </div><!--부띠끄찾기-->
+      </section>
+
+
+  </main>
+
+  <footer class="footer_box">
+    <div class="f_container">
+      <div class="f_box">
+        <h6 class="f_title">SERVICES &nbsp<i class="far fa-credit-card"></i></h6>
+          <p>FAQ</p>
+          <p>Payment</p>
+          <p>Returns</p>
+          <p>Shipping</p>
+          <p>Follow your Order</p>
+      </div>
+      <div class="f_box">
+        <h6 class="f_title">ABOUT &nbsp<i class="far fa-question-circle"></i></h6>
+          <p>Careers</p>
+          <p>Privacy Poicy</p>
+          <p>Legal</p>
+          <p>Site map</p>
+          <p>&nbsp</p>
+      </div>
+      <div class="f_box">
+      <h6 class="f_title">CONTACT US &nbsp<i class="fas fa-phone"></i></h6>
+          <p>US +1 646 889 1895</p>
+          <p>Mon-Sat 9am-9pm ET</p>
+          <p>&nbsp</p>
+          <p>&nbsp</p>
+          <p>&nbsp</p>
+      </div>
+      <div class="f_box">
+        <h6 class="f_title">NEWSLETTER &nbsp<i class="far fa-envelope"></i></h6>
+        <p id="mail_box">E-MAIL<i class="fas fa-chevron-right"></i></p>
+        <p id="f_sns"><h6 class="f_title">SNS</h6>
+          <ul id="sns_img">
+            <li><img src="images/twitter.png"></li>
+            <li><img src="images/facebook.png"></li>
+            <li><img src="images/insta.png"></li>
+            <p>&nbsp</p>
+
+          </ul>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+</body>
+</html>

@@ -121,7 +121,7 @@ function pagePop(url, i){
 //    alert(num);
 //    alert(nm);
     if(num == 5){
-        var popup = window.open('', '_blank','width=390, height=667, scrollbars=no, menubar=no');
+        var popup = window.open('', '_blank','width=390, height=667, scrollbars=no');
         popup.document.write("<title>"+nm+"</title>");
         popup.document.write("<iframe width='375' height='667' src='https://xd.adobe.com/embed/3d0e9b22-4258-4bc3-9f45-35ea5a3220d1-685d/' frameborder='0' allowfullscreen></iframe>");
     }else{
