@@ -1,0 +1,78 @@
+/*calendar,weekly wrap->id*/    
+/*---------------calendar----------------*/    
+    /*reset*/
+        *{margin : 0; padding: 0; font-family: "Lucida Grande", Lucida, Verdana, sans-serif;}
+         a{color:#551a8b; text-decoration: none;}
+        li{list-style: none;}
+        .clearfix::before, .clearfix::after{display: block; content: ''; clear:both;}
+        #wrap {width: 1200px; margin: 0px auto;}
+        #side {float: left; width: 200px;font-size: 16px; color:#fff;}
+        nav{width: 200px; height: 700px; background: #b7a8d4;}
+
+        .tab{width: 200px; height: 40px; background: #d1c4e9; }
+        .tab>ul{padding-left: 6px;}
+        .tab>ul>li {float: left; padding: 10px;}
+        #content {float: left; width: 900px;padding-top: 20px;}
+        #check,#bucket,#daily{padding:10px;}
+        h4{padding-bottom: 6px;}
+        
+        #user{
+            margin-bottom: 6px; text-align:center;
+        }
+        .btn>button{width: 20px; height: 20px;}
+       
+        #logo{
+            width:1100px; height: 100px; background:#b7a8d4; color:#fff; text-align: center;    
+        }
+        #logo > h2{padding-top: 33px;}
+    /*table,calendar,weekly*/
+		.cal{margin-left: 50px;}
+        .weekly{margin-left:10px;}
+		table{
+            border-spacing: 0;
+            table-layout: auto;
+            border-collapse: collapse;
+            font-size: 0.8em;
+        }
+        th,td{
+            width:95px;
+            padding: 8px;
+        }
+        td{
+            height: 30px;
+            vertical-align: top;
+        }
+		
+        .week>td{
+            height : 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .date>tr{
+            height : 95px;
+        }
+
+        #red{
+            color:red;
+        }
+        #blue{
+            color:blue;
+        }
+	.line{border-bottom:solid 1px #ccc; height: 45px;}/*weekly*/
+	.w_week{border-bottom:solid 1px #ccc;}
+/*---------------cont2----------------*/	
+	#cont2{width:900px; height: 40px; margin:0 auto; border-top:solid 1px #ccc;}
+	.alarm {color:#551a8b; width:900px; height: 40px; text-align:center; padding:20px 0 0 10px;}
+
+/*---------------weekly----------------*/
+        .scroll{
+                overflow:scroll; height:680px;
+        }
+        .line>td{
+                background:#ddd; border-bottom: 1px solid #fff;
+        }
+/*--------------minical----------------*/
+
+
+
+
+

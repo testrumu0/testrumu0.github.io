@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/book_add.css">
+        <title>도서추가</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script  src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="js/common.js"></script>
+    	<script src="js/book_list.js"></script> 
+        <script src="js/cookie.js"></script>
+    </head>
+<body>
+    <div id = "wrap">
+     <header>
+        <div id="logo">
+             <h1><a href="main.html">FINGERBOOK 핑거북</a></h1>
+        </div>       
+                        
+		<div id="top">
+			<ul id="top_menu">
+				<li class="cookie"></li>
+				<li>|</li>
+				<li><a href="join.html">JOIN US</a></li>
+				<li>|</li>
+				<li><a href="">MY PAGE</a></li>
+			</ul>
+		</div>
+     </header>
+     
+     <div class="clear"></div>
+     
+     <div id = "left_box">
+         <aside>
+             <nav class="nav">
+                 <ul>
+                     <li id="gnb01">
+                        <a href="">
+                        <span class="material-icons md-36">face</span>
+                             	회원 정보
+                        </a>
+                     </li>
+                     <li id="gnb02">
+                       <a href="my_library.html">
+                           <span class="material-icons md-36">import_contacts</span>
+                            	나의 서재
+                       </a>
+                     </li>
+                     <li id="gnb03">
+                       <a href="book_record.html">
+                           <span class="material-icons md-36">create</span>
+                           	독서 기록
+                       </a>
+                     </li>
+                     <li id="gnb04">
+                        <a href="">
+                           <span class="material-icons md-36">insert_chart_outlined</span>
+                          	 독서 통계 
+                        </a>
+                     </li>
+                     <li id="gnb05">
+                        <a href="book_alarm.html">
+                            <span class="material-icons md-36">notifications_none</span>
+                            	독서 알림
+                        </a>
+                     </li>
+                 </ul>
+             </nav>
+         </aside>
+         <div id = "service">
+            <h6>FINGERBOOK SERVICE</h6>
+             <ul id="service_btn">
+                 
+                 <li id="btn2">
+                 <a href="local_libr.html">
+                     <p id="btn_txt2">우리동네 공공도서관
+                     <span class="material-icons md-30">navigate_next</span>
+                     </p>
+                 </a>
+                 </li>
+                 
+                 <li id="btn3">
+                 <a href="book_add.html">
+                     <p id="btn_txt3">도서 추가 하기
+                     <span class="material-icons md-30">navigate_next</span>
+                     </p>
+                 </a>
+                 </li>
+             </ul>
+         </div><!--service--> 
+     </div><!--leftbox--> 
+
+     
+     <div id="right_box">
+        <div class="main_wrap">
+          <div id="main_img"><img src="img/book_add_main_img.png"></div>
+          <div id="main_txt01"><p>도서 추가하기 </p></div>
+          <div id="main_txt02"><p>검색을 통해 원하는 도서를 검색하고 서재에 추가하세요.</p></div>
+        </div>
+
+			<div id="search">
+				<h6>도서검색</h6>
+				<div id="search_bar">
+					<div class="search_book">
+						<div id="cat">
+							<select name="s_key" id="s_key">
+								<option value="" selected>CATEGORY</option>
+								<option value="bookname">도서명</option>
+								<option value="authors">저자명</option>
+								<option value="publisher">출판사명</option>
+							</select>
+						</div>
+						<div id="search_btn">
+							<input type="text" name="s_value" id="s_value" class="searchTerm" 
+								placeholder="도서명, 저자 또는 출판사명을 입력하세요.">
+							<button type="button" id="action" class="searchButton">
+								SEARCH&nbsp; <span class="material-icons md-30">search</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--search--> 
+         
+         <div id="contents">                  
+                     <h6>도서 목록</h6>                
+             <div id="book_list">
+             
+                <table class="table_wrap" id="add_book_list" align="center">                                     	
+                </table>
+             
+             </div><!--book_list--> 
+         </div><!--contents--> 
+     </div><!--rightbox-->
+     
+     <div class="clear"></div>
+     
+     <footer>
+         <div>FingerFoots</div>
+         <div class="line"></div>
+         <div>Copyrights</div>
+     </footer> 
+    </div><!--wrap--> 
+  
+</body>
+</html>

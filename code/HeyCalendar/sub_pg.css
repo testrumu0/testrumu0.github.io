@@ -1,0 +1,30 @@
+/*---------------write,list,view------------*/
+        *{margin : 0; padding: 0; font-family: "Lucida Grande", Lucida, Verdana, sans-serif;}
+         a{color: :#333; text-decoration: none;}
+        li{list-style: none;}
+        .clearfix::before, .clearfix::after{display: block; content: ''; clear:both;}
+
+        .wrap{ height: 300; text-align: center;}
+        table{margin: 0 auto; }
+        
+        .log{ background: #b7a8d4; margin: 100px auto; width: 200px; height: 200px; padding: 50px 30px 30px 40px; text-align: center; color: #fff;}
+
+        .header {background:#b7a8d4; width: 100%; height: 40px; color:#fff; text-align: center; margin-top:30px; padding-top: 10px;}
+        
+        .list_table{width:680px; margin: 0 auto;}
+		.list_table > tr,th,td{height:22px; padding: 3px 0; }
+        th{background-color:#b7a8d4; color: #fff; font-size: 16px;}
+        .num{width: 80px; }
+        .title{ width:230px; }
+        .writer{ width:100px; }
+        .regtime{ width:180px; }
+        .left{text-align:left;}
+		
+		#red{color:red;}
+		#blue{color:blue;}
+		
+		.minical{width:220px; height:200px; margin-left:180px; }
+		.minical > table{width:220px; height:200px; color:#000;}
+		.thead{background:#b7a8d4; padding:3px 0; }
+        
+        
