@@ -175,6 +175,16 @@ h5{
     background-color: #fcf5ef;
     display: none;
 }
+.b_line{
+    display: none;
+/*    width: 7vw;*/
+    height: 0.9vh;
+    background-color: #6db5ca;
+    position: relative;
+    top:-1.2vh;
+    z-index: -3;
+    
+}
 
 /*-------------SKILLS-------------*/
 .bg_box3{
@@ -227,7 +237,9 @@ h5{
 .sec3_con .sec3_bottom li p{
     padding-top: 3vh;
 }
-
+.icon span{
+    display: none;
+}
 
 /*-------------PORTFOLIO-------------*/
 .sec4{

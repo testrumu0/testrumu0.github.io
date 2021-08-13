@@ -5,11 +5,13 @@ $(document).ready(function() {
     const slide = new Swiper('#newSwiper', swiperSetting);
     
     animateSlideA();
+    moveIcon();
+    txtLine();
     
 });
 
 
-    function fullset(){    
+    function fullset(){//페이지전체 스크롤   
     var pageindex = $("#fullpage > .box").size();//fullpage 내의 섹션 개수 확인
     $("#fullpage .quick ul :first-child").addClass("on");//화면로드시 첫번째 항목에 클래스 적용
     //마우스 휠 이벤트
@@ -84,8 +86,35 @@ $(document).ready(function() {
 	});
     
   }//ENDfullset
- 
-//SwiperSetting
+   
+//AnimateText--HOME    
+    function animateSlideA() {//글자 나타남
+        var slideA = $(".slide_txt");
+        slideA.each(function(i){
+             setTimeout(function () {
+                slideA.eq(i).addClass("is_visible");
+             }, 300*(i+1));              
+        });       
+   }
+
+//textLine--ABOUT
+    function txtLine(){ //마우스 오버 시 text에 밑줄
+        $('.about_title').each(function(){
+            var b = $(this);
+            var b_txt = b.find('span');
+            var w = b_txt.width();
+            var line = b.find('.b_line');
+            b.on('mouseover',function(){
+                line.css({"display":"block","width":w});
+            });
+            b.on('mouseout',function(){
+                line.css("display","none");
+            }); 
+        });
+       
+    }
+
+//SwiperSetting--PORTFOLIIO
    var swiperSetting = {
       slidesPerView: 'auto',
       pagination : {
@@ -103,25 +132,15 @@ $(document).ready(function() {
       slidesOffsetBefore : 0, // 슬라이드 시작 부분 여백
       slidesOffsetAfter : 0, // 슬라이드 시작 부분 여백
    } 
-   
-//AnimateText    
-    function animateSlideA() {
-        var slideA = $(".slide_txt");
-        slideA.each(function(i){
-             setTimeout(function () {
-                slideA.eq(i).addClass("is_visible");
-             }, 300*(i+1));              
-        });       
-   }
 
-//PagePopup
-function pagePop(url, i){
+//PagePopup--PORTFOLIO
+function pagePop(url, i){//매개변수 이미지src,index
     var nm = $('#p_btn'+i).attr('class');
     var url = url;
     var num = i;
 //    alert(num);
 //    alert(nm);
-    if(url==''&&num == 5){
+    if(url==''&&num == 5){//방구석라이프_프로토타입
         var popup = window.open('', '_blank','width=390, height=667, scrollbars=no');
         popup.document.write("<title>"+nm+"</title>");
         popup.document.write("<iframe width='375' height='667' src='https://xd.adobe.com/embed/3d0e9b22-4258-4bc3-9f45-35ea5a3220d1-685d/' frameborder='0' allowfullscreen></iframe>");
@@ -132,6 +151,29 @@ function pagePop(url, i){
     }
 
 }
+
+
+//IconAnimate--SKILLS
+    function moveIcon(){//마우스 오버 시 아이콘 이미지 확장자 변경
+            $('.icon > li').each(function(){
+    			var a = $(this);
+    			var img = a.find('img');
+                var txt = a.find('p');
+                var overtxt = a.find('span').text();
+                var origintxt = txt.text();
+    			var originsrc = img.attr('src');
+    			var oversrc = originsrc.replace('.png','.gif'); 
+    			a.on('mouseover', function(){
+    				img.attr('src',oversrc);
+                    txt.text(overtxt).css('color','#ff7235');
+    			});
+    			a.on('mouseout', function(){
+    				img.attr('src',originsrc);
+                    txt.text(origintxt).css('color','#000');
+    			});
+    		});
+        }
+
 
 /*출처: https://100ah.tistory.com/12 [Hello 100A] FullpageSlide
        https://jineecode.tistory.com/77 Swiper
