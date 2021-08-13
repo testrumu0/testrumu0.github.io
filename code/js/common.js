@@ -1,6 +1,7 @@
 $(document).ready(function() {
     
     fullset();
+    quickClick();
 
     const slide = new Swiper('#newSwiper', swiperSetting);
     
@@ -87,6 +88,22 @@ $(document).ready(function() {
     
   }//ENDfullset
    
+//퀵버튼 클릭 이동 
+function quickClick(){ 
+    $(".quick li").click(function(){ 
+        var gnbindex = $(this).index()+1; 
+        var length=0; 
+        for(var i=1; i<(gnbindex); i++) { 
+            length+=$(".sec"+i).height(); 
+        } 
+        if($("body").find("#fullpage:animated").length >= 1) return false; 
+        $(this).addClass("on").siblings("li").removeClass("on"); 
+        $("#fullpage").animate({"top": -length + "px"},800, "swing"); 
+        return false; 
+    }); 
+}
+
+
 //AnimateText--HOME    
     function animateSlideA() {//글자 나타남
         var slideA = $(".slide_txt");

@@ -11,6 +11,10 @@ html,body{
     overflow: hidden;
     font : 62.5% '3Light';
 }
+a:link, a:visited {
+    text-decoration: none;
+    color: #000;
+}
 table, td{
     border: none;
     padding: 0;
@@ -54,7 +58,7 @@ header{
     display: block;
     padding-top: 1vh;
 }
-.subMenu li:hover{
+.subMenu li a:hover{
     color: #ff7235;
 }
 h1{
