@@ -169,6 +169,13 @@ function pagePop(url, i){//매개변수 이미지src,index
 
 }
 
+//codePop
+function codePop(i){
+    var num = i;
+    var url_1 = "https://github.com/testrumu0/testrumu0.github.io/tree/master/code/Fingerbook";
+    var url_2 = "https://github.com/testrumu0/testrumu0.github.io/tree/master/code/HeyCalendar";
+    var win = (i == 1) ? window.open(url_1,'_blank') : window.open(url_2,'_blank')
+}
 
 //IconAnimate--SKILLS
     function moveIcon(){//마우스 오버 시 아이콘 이미지 확장자 변경
