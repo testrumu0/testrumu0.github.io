@@ -1,0 +1,47 @@
+@charset"UTF-8";
+/*main*/
+
+#container {width: 1280px; margin: 0 auto; padding-top: 90px;}
+
+h2{color:#0a4d7a; letter-spacing:3px; padding-bottom: 3px;}
+.line {width : 400px; border-bottom:solid 4px #0a4d7a; padding-top:6px; margin-bottom: 35px;}/*서브타이틀라인*/
+
+
+.sub_line {width: 230px; border-bottom:solid 4px #0a4d7a; padding-bottom: 10px;}
+.room_line {width:620px; border-bottom:solid 1px #999999;}
+
+/*탑객실공통*/
+.room01 {height:510px; margin-bottom:35px;}
+.top_room{float:left;}
+.top_room img{width: 580px; height:500px; margin-right:55px;}
+.bt01 img {width:350px; margin-left: 30px;}
+.room_view {margin:25px 0 0 25px; }
+.room_view p {font-size: 19px; color:#333; line-height: 180%; letter-spacing:1px;}
+.bold {font-weight: 600;}
+
+/*스탠다드*/
+#standard {width: 640px; float:left;}
+#std_01 div {display:inline-block; }
+#std_01 p {font-size: 22px; position: relative; top:50px; left: 73px; font-weight: 600; color:#0a4d7a;}
+#room_article01 {width:600px; margin: 100px 30px 100px 20px;}
+#room_article01 p {font-size: 20px; color:#333; line-height: 180%; letter-spacing:1px;}
+
+/*디럭스*/
+#delux {width: 640px;float:left;}
+#std_02 div {display:inline-block; }
+#std_02 p {font-size: 22px; position: relative; top:50px; left: 85px; font-weight: 600; color:#0a4d7a;}
+#room_article02 {width:600px; margin: 100px 30px 100px 20px;}
+#room_article02 p {font-size: 20px; color:#333; line-height: 180%; letter-spacing:1px;}
+
+/*스위트룸타이틀*/
+h3{color:#0a4d7a;text-align: center;font-size: 22px; letter-spacing: 3px;}
+#s_title {margin: 35px 0;}
+#s_title .line {margin: 0 auto;}
+#s_title p{text-align: center; font-size: 18px; margin-top: 15px;}
+
+/*스위트룸*/
+.room02 div {display: inline-block; width: 380px; margin: 0 15px;}
+.room02 p {padding: 3px 0 0 8px;}
+.r_img img {width: 380px; height: 420px; }
+.sr_title {color:#0a4d7a; font-size:20px;letter-spacing: 2px; font-weight: 600; margin: 8px 0 5px 0;}
+.bt02 img{width:380px;margin-top: 15px;}

@@ -1,0 +1,56 @@
+@charset"UTF-8";
+/*main*/
+#container {width: 1280px; margin: 0 auto;}
+#main_banner {width: 1280px; height:580px; margin-top: 55px; background: url('img/m_banner.jpg'); background-repeat: no-repeat; }
+
+.textbox{ position: relative;
+          top: 36%;
+          bottom: 0;
+          right:0;
+          left: 5%;
+          color :#fff;
+        }
+#text_main {font-size: 40px; text-align: left; letter-spacing: 3px;}
+#text_sub {margin-top: 25px;
+            font-size: 20px;
+            line-height: 180%;
+    letter-spacing: 2px;}
+
+.line{width : 400px; border-bottom:solid 4px #0a4d7a; margin: 0 auto; padding-top:6px;}
+
+h3{ color:#0a4d7a; font-size:22px; letter-spacing: 2px; }
+h4{ color:#333; font-size:18px;}
+
+#course {text-align: center; margin :60px 0; color:#333; width: 1280px;}
+
+#course img {width:380px; height: 250px; padding-bottom: 10px;}
+.theme {width:400px; display: inline-block; padding-top: 40px;}
+.theme li {line-height: 150%; font-size: 16px;}
+.theme p {padding:10px;}
+
+
+#sec_banner {height: 250px; background: url('img/nightview.jpg');}
+.sub_box {position: relative;
+          top: 30%;
+          bottom: 0;
+          right:0;
+          left: 0;
+          color :#fff; text-align: center;}
+#sb_01{width : 430px; height:80px; margin: 0 auto; font-size : 28px; letter-spacing: 3px; border: solid 1px #fff; background: rgba(0,0,0,0.2);}
+#sb_01 p {padding: 23px 0;}
+#sb_02 {font-size : 16px; padding-top: 10px; letter-spacing: 2px;}
+
+/*hotel service*/
+#service{width: 1200px; margin: 0 auto; text-align: center; padding: 60px 0;}
+#service h3 {margin-top:10px; }
+#service li{display: inline-block; width: 200px; padding:20px 20px 0px 20px;}
+#service img {width:180px;}
+#service p {font-size:18px; padding-top: 5px;}
+
+#package {text-align: center; margin: 40px 0; color:#333;}
+#package img {width:330px; height: 220px; padding-bottom: 10px;}
+
+.pack { width : 320px; margin : 0 auto; display:inline-block; padding:40px 40px 50px 40px; }
+.pack li {line-height: 150%; font-size: 16px;}
+.pack p {padding-top:10px;}
+
