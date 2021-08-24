@@ -37,7 +37,9 @@ header{
     padding-left: 0.7vw;
 }
 .Menu .menu2{
-    padding-left: 75vw;
+/*    padding-left: 75vw;*/
+    position: absolute;
+    right: 5vw;
 }
 .Menu .menu2 img{
     width: 2vw;
@@ -143,13 +145,15 @@ h5{
 }
 .sec1{
     background-image: url('../img/home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*-------------ABOUT-------------*/
 .sec2_title{
     position: absolute;
     top: 34vh;
-    left: 9vw;
+    left: 7vw;
 }
 .sec2_con{
     position: absolute;
@@ -164,12 +168,21 @@ h5{
 .sec2_con .about td{
     padding-bottom: 2vh;
 }
-.sec2_con .about tr:nth-child(3) td{
+.sec2_con .about tr:nth-child(3) td{1
     padding: 10vh 0;
 } 
 .sec2_con .about_title{
     font: 1.8rem '5Medium';
     letter-spacing: 5;
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .sec2_con .about_title{
+    font: 1.3rem '5Medium';
+    letter-spacing: 3;
+    }
+    .sec2_con .about{
+        font: 1.3rem '3Light';
+    }
 }
 .bg_box2{
     width: 63vw;
