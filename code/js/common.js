@@ -4,6 +4,14 @@ $(document).ready(function() {
     quickClick();
 
     const swiper = new Swiper('.swiper', {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+          },
+        navigation:{//버튼 사용자 지정
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+        },
           speed: 600,
           spaceBetween: 0,
         });
@@ -133,10 +141,6 @@ function quickClick(){
         });
        
     }
-
-//SwiperSetting--PORTFOLIIO
-
-
 
 //PagePopup--PORTFOLIO
 function pagePop(url, i){//매개변수 이미지src,index
