@@ -3,7 +3,10 @@ $(document).ready(function() {
     fullset();
     quickClick();
 
-    const slide = new Swiper('#newSwiper', swiperSetting);
+    const swiper = new Swiper('.swiper', {
+          speed: 600,
+          spaceBetween: 0,
+        });
     
     animateSlideA();
     moveIcon();
@@ -132,23 +135,8 @@ function quickClick(){
     }
 
 //SwiperSetting--PORTFOLIIO
-   var swiperSetting = {
-      slidesPerView: 'auto',
-      pagination : {
-          el : '.swiper-pagination',
-          type:"fraction",
-      },
-       navigation: {   // 버튼 사용자 지정
-	   nextEl: '.swiper-button-next',
-	   prevEl: '.swiper-button-prev',
-      },
-//      centeredSlides: true,
-//      loop: true,
-//      loopedSlides: 2,
-      spaceBetween : 1,
-      slidesOffsetBefore : 0, // 슬라이드 시작 부분 여백
-      slidesOffsetAfter : 0, // 슬라이드 시작 부분 여백
-   } 
+
+
 
 //PagePopup--PORTFOLIO
 function pagePop(url, i){//매개변수 이미지src,index

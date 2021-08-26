@@ -175,15 +175,7 @@ h5{
     font: 1.8rem '5Medium';
     letter-spacing: 5;
 }
-@media screen and (min-width:768px) and (max-width:1024px) {
-    .sec2_con .about_title{
-    font: 1.3rem '5Medium';
-    letter-spacing: 3;
-    }
-    .sec2_con .about{
-        font: 1.3rem '3Light';
-    }
-}
+
 .bg_box2{
     width: 63vw;
     height: 100%;
@@ -264,6 +256,10 @@ h5{
   background-image: url('../img/portfolio.jpg');
   font-size: 1.8rem;
 }
+.sec4_title, .sec4_btn{
+    width: 31vw;
+}
+
 .sec4_title{
     position: absolute;
     left: 0;
@@ -315,11 +311,12 @@ h5{
     top: 68vh;
     left: 20.5vw;
     line-height: 3.8rem;
+    width: 22vw;
 }
 .swiper-slide:nth-child(3) .sec4_txt{
     left: 25.5vw;
 }
-.swiper-container{
+.swiper{
     position: absolute;
     left: 5.2vw;
     z-index: 100;
