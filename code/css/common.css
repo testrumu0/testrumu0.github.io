@@ -1,4 +1,18 @@
-
+/*media*/
+@media screen and (min-width : 1920px){/*1920이상*/
+    /*sec1*/
+    h1{
+        font: 9.0rem '5Medium';
+        letter-spacing: 6;
+    }
+    h5{
+       font-size : 4.2rem; 
+    }
+    /*sec4*/
+    .sec4_img{
+        width: 45vw;
+}
+}
 /*COMMON*/
 *{
     margin:0;
