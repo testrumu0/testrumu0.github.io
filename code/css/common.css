@@ -1,18 +1,4 @@
-/*media*/
-@media screen and (min-width : 1920px){/*1920이상*/
-    /*sec1*/
-    h1{
-        font: 9.0rem '5Medium';
-        letter-spacing: 6;
-    }
-    h5{
-       font-size : 4.2rem; 
-    }
-    /*sec4*/
-    .sec4_img{
-        width: 45vw;
-}
-}
+
 /*COMMON*/
 *{
     margin:0;
@@ -24,6 +10,11 @@ html,body{
     height:100%;
     overflow: hidden;
     font : 62.5% '3Light';
+}
+@media screen and (min-width : 1920px){/*font*/
+    html,body{font-size:80%;}
+    .sec2_con .about td{font-size:1.8rem;}
+    .sec5 td{font-size: 1.9rem;}
 }
 a:link, a:visited {
     text-decoration: none;
@@ -189,7 +180,6 @@ h5{
     font: 1.8rem '5Medium';
     letter-spacing: 5;
 }
-
 .bg_box2{
     width: 63vw;
     height: 100%;
@@ -224,6 +214,7 @@ h5{
     top: 65vh;
     margin: 0 7vw;
     z-index: 3;
+    text-align: center;
 }
 .sec3_con{
     position: absolute;
@@ -279,10 +270,6 @@ h5{
     left: 0;
     top: 28vh;
 }
-.swiper-slide:nth-child(3) .sec4_title, .swiper-slide:nth-child(3) .sec4_btn{
-    position: absolute;
-    left: 5.2vw;
-}
 .sec4_s{
     letter-spacing: 0.7;
 }
@@ -317,6 +304,14 @@ h5{
     left: 45vw;
     top: 18vh;
 }
+@media screen and (min-width : 1920px){
+    .swiper-slide:nth-child(-n+3) .sec4_img img{width:42vw;}
+    .swiper-slide:nth-child(4) .sec4_img img{width:47vw; position: relative; right: 4vw;}
+    #mobile_img img:nth-child(1){padding:0;}
+    #mobile_img img{width:17.5vw;}
+    .sec4_btn button{font-size:1.4rem;}
+}
+
 #mobile_img img:nth-child(1){
     padding: 0 5vw 0 3vw;
 }
@@ -327,16 +322,11 @@ h5{
     line-height: 3.8rem;
     width: 22vw;
 }
-.swiper-slide:nth-child(3) .sec4_txt{
-    left: 25.5vw;
-}
+
 .swiper{
     position: absolute;
     left: 5.2vw;
     z-index: 100;
-}
-.swiper-slide:nth-child(3){
-   right: 5vw;
 }
 .swiper-button-next {
   background: url(../img/next.png) no-repeat;
