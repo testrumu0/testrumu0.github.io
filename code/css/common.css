@@ -11,7 +11,8 @@ html,body{
     overflow: hidden;
     font : 62.5% '3Light';
 }
-@media screen and (min-width : 1920px){/*1920*/
+/*1920*/
+@media screen and (min-width : 1920px){
     html,body{font-size:80%;}
     .sec2_con .about td{font-size:1.8rem;}
     .sec5 td{font-size: 1.9rem;}
@@ -20,6 +21,33 @@ html,body{
     #mobile_img img:nth-child(1){padding:0;}
     #mobile_img img{width:17.5vw;}
     .sec4_btn button{font-size:1.4rem;}
+}
+/*768-1024사이tablet가로*/
+@media (min-width : 768px) and (max-width : 1024px) and (orientation: landscape){
+    html,body{font-size:55%;}
+    .sec2_title, .sec3_title{font-size: 3.5rem;}
+    .about_title{visibility: hidden;}
+    .title1::after{
+          content: 'Pro';
+          display: block;
+          visibility: visible;
+    }
+    .title2::after{
+          content: 'Edu';
+          display: block;
+          visibility: visible;
+    }
+    .title3::after{
+          content: 'Lic';
+          display: block;
+          visibility: visible;
+    }
+    .bg_box3{}
+    .sec3_con{text-align: center;}
+}
+/*320-479사이mobile*/
+@media (min-width : 320px) and (max-width : 480px){
+    
 }
 a:link, a:visited {
     text-decoration: none;
@@ -150,7 +178,8 @@ h5{
     height: 13vh;
     background-color: #6db5ca;
     position: relative;
-    left: 58vw;
+    float:right;
+/*    left: 58vw;*/
     top:53vh;
 }
 .sec1{
@@ -243,13 +272,14 @@ h5{
     padding-bottom: 3vh;
 }
 .sec3_con .sec3_top img{
-    width: 4.3vw;
+    width: 8.2vmin;
 }
 .sec3_con .sec3_top li:nth-child(3) ul img{
     padding: 1.9vh;
 }
 .sec3_con .sec3_bottom img{
-    height: 9vh;
+/*    height: 9vh;*/
+    width: 9.4vmin;
 }
 .sec3_con .sec3_bottom li{
     height: 15vh;
