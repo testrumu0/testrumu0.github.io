@@ -44,6 +44,18 @@ html,body{
     }
     .bg_box3{}
     .sec3_con{text-align: center;}
+    .swiper-slide:nth-child(-n+3) .sec4_img img{width:42vw;}
+    .swiper-slide:nth-child(4) .sec4_img img{width:47vw; position: relative; right: 4vw;}
+    #mobile_img img:nth-child(1){padding:0;}
+    #mobile_img img{width:17.5vw;}
+    .sec4_btn button{font-size:1.2rem;}
+    .sec4_title, .sec4_btn, .sec4_txt{text-align: center;}
+    .sec4_txt{margin-left: 17vw;}
+    .vertical_line{display: none;}
+    .sec5_con{margin-left: 5vw;}
+    .sec5_txt{font-size: 2.3rem;}
+    .sec5_icon img{width: 3.5vw;}
+    .sec5{background-position: center;}
 }
 /*320-479사이mobile*/
 @media (min-width : 320px) and (max-width : 480px){
@@ -174,13 +186,13 @@ h5{
     left: 5vw;
 }
 .bg_box1{
-    width: 42vw;
+    width: 84vmin;
     height: 13vh;
     background-color: #6db5ca;
-    position: relative;
-    float:right;
+    position: absolute;
+    right: 0;
 /*    left: 58vw;*/
-    top:53vh;
+    top:65.7vh;
 }
 .sec1{
     background-image: url('../img/home.jpg');
@@ -246,7 +258,7 @@ h5{
 .sec3_title{
     position: relative;
     top: 65vh;
-    margin: 0 7vw;
+/*    margin: 0 7vw;*/
     z-index: 3;
     text-align: center;
 }
@@ -347,7 +359,7 @@ h5{
     top: 68vh;
     left: 20.5vw;
     line-height: 3.8rem;
-    width: 22vw;
+    width: 28vw;
 }
 
 .swiper{
@@ -372,7 +384,8 @@ h5{
 
 /*-------------CONTACT-------------*/
 .sec5{
-    background-image: url('../img/contact.jpg');
+    background-image: url('../img/bg5.jpg');
+    background-size: cover;
 }
 .sec5_con{
     position: absolute;
@@ -381,7 +394,7 @@ h5{
     font: 1.8rem '2ExtraLight';   
 }
 .sec5_icon img{
-    width: 2.5vw;
+    width: 2.7vw;
 }
 .sec5 td{
     padding-bottom: 5vh;
@@ -395,4 +408,20 @@ h5{
     bottom: 5vh;
     left: 23.3vw;
     opacity: 0.4;
+}
+.sec5_title{
+    opacity: 0.9;
+    font: 700 12.8rem '5Medium';
+    position: absolute;
+    top: 22vh;
+    left: -1.2vw;
+    z-index: 3;
+}
+.bg_box5{
+    width: 88vw;
+    height: 18.4vh;
+    background-color: #6db5ca;
+    position: relative;
+    top:17vh;
+    float: right;
 }
