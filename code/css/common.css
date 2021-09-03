@@ -16,14 +16,14 @@ html,body{
     html,body{font-size:80%;}
     .sec2_con .about td{font-size:1.8rem;}
     .sec5 td{font-size: 1.9rem;}
-    .swiper-slide:nth-child(-n+3) .sec4_img img{width:42vw;}
-    .swiper-slide:nth-child(4) .sec4_img img{width:47vw; position: relative; right: 4vw;}
+    .swiper-slide:nth-child(-n+3) .sec4_img img{width:42vw; position: relative; right: -2.5vw;}
+    .swiper-slide:nth-child(4) .sec4_img img{width:47vw; position: relative; right: 1.5vw;}
     #mobile_img img:nth-child(1){padding:0;}
     #mobile_img img{width:17.5vw;}
     .sec4_btn button{font-size:1.4rem;}
 }
 /*768-1024사이tablet가로*/
-@media (min-width : 768px) and (max-width : 1024px) and (orientation: landscape){
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation: landscape){
     html,body{font-size:55%;}
     .sec2_title, .sec3_title{font-size: 3.5rem;}
     .about_title{visibility: hidden;}
@@ -42,25 +42,62 @@ html,body{
           display: block;
           visibility: visible;
     }
-    .bg_box3{}
-    .sec3_con{text-align: center;}
+    .sec3{background: #fcf5ef;}
+    .sec3_con{text-align: center; margin-left: 15vmax;}
+    .bg_box3{display: none;}
     .swiper-slide:nth-child(-n+3) .sec4_img img{width:42vw;}
     .swiper-slide:nth-child(4) .sec4_img img{width:47vw; position: relative; right: 4vw;}
     #mobile_img img:nth-child(1){padding:0;}
     #mobile_img img{width:17.5vw;}
     .sec4_btn button{font-size:1.2rem;}
+    .sec4_title, .sec4_btn{margin-left: 1.8vw;}
     .sec4_title, .sec4_btn, .sec4_txt{text-align: center;}
-    .sec4_txt{margin-left: 17vw;}
+    .sec4_txt{margin-left: 16vw; margin-top: 2.5vh;}
     .vertical_line{display: none;}
     .sec5_con{margin-left: 5vw;}
     .sec5_txt{font-size: 2.3rem;}
     .sec5_icon img{width: 3.5vw;}
     .sec5{background-position: center;}
 }
-/*320-479사이mobile*/
-@media (min-width : 320px) and (max-width : 480px){
-    
+/*320-500사이mobile*/
+@media screen and (min-width : 320px) and (max-width : 500px){
+    html,body{font-size:55%;}
+    #quick{display: none;}
+    .sec1_title, .sec1 hgroup{text-align:center;}
+    .sec1_title{margin-right: 24vw; z-index: 2;}
+    .sec1 hgroup h1{margin-right: 3.8vw;}
+    .sec1 hgroup h5{
+        position: absolute;
+        top: -9.3vh;
+        left: 15vw;
+    }
+    .bg_box1{display: none;}
+    .bg_mobile{
+        width: 82vw;
+        height: 53vh;
+        background: #6db5ca;
+        position: absolute;
+        top:26.3vh;
+        left:8.5vw;
+        opacity: 0.93;
+    }
+    .sec2_title, .about_title{display: none;}
+    .sec3 .bg_box3{display: none;}
+    .sec3_con{margin-left: -9.5vw;}
+    .sec3_con .sec3_bottom li:nth-child(3){padding-left:3vw;}
+    .vertical_line{display: none;}
+    .swiper-slide:nth-child(-n+3) .sec4_img img{
+        width:42vw;
+        position: absolute;
+        top: 39vh;
+    }
+    .sec4_title, .sec4_btn{margin-left: 5vw; margin-top: -13vh;}
+    .sec4_btn{}
+    .sec4_txt{
+        margin-left: -15vw;
+    }
 }
+
 a:link, a:visited {
     text-decoration: none;
     color: #000;
@@ -265,36 +302,40 @@ h5{
 .sec3_con{
     position: absolute;
     top: 27vh;
-    left: 14.5vw;
+    left: 24.7vmax;
 }
 .sec3_con .sec3_top{
     margin-bottom: 12vh;
 }
 .sec3_con .sec3_top li, .sec3_con .sec3_bottom li{
     display: inline-block;
-    width: 7vw;
     text-align: center;
     font: 1.8rem '5Medium';
-    padding-left: 5vw;
+
 }
 .sec3_con .sec3_top li{
-    height: 19vh;
+    height: 19vmin;
+}
+.sec3_con .sec3_top li:nth-child(2){
+    padding: 0 7.3vmax 0 9.3vmax;
 }
 .sec3_con .sec3_top li p{
-    padding-bottom: 3vh;
+    padding-bottom: 3vmin;
 }
 .sec3_con .sec3_top img{
     width: 8.2vmin;
 }
 .sec3_con .sec3_top li:nth-child(3) ul img{
-    padding: 1.9vh;
+    padding: 1.8vh;
 }
 .sec3_con .sec3_bottom img{
-/*    height: 9vh;*/
-    width: 9.4vmin;
+    width: 9.8vmin;
 }
 .sec3_con .sec3_bottom li{
-    height: 15vh;
+    height: 12vh;
+}
+.sec3_con .sec3_bottom li:nth-child(2){
+    padding: 0 8vmax;
 }
 .sec3_con .sec3_bottom li p{
     padding-top: 3vh;
@@ -309,7 +350,7 @@ h5{
   font-size: 1.8rem;
 }
 .sec4_title, .sec4_btn{
-    width: 31vw;
+    width: 34vmax;
 }
 
 .sec4_title{
@@ -333,7 +374,7 @@ h5{
     border: solid 1.3px #000;
     border-radius: 7px;
     background-color: #fcf5ef;
-    width: 13vw;
+    width: 13vmax;
     height: 8vh;
     color: #000;
     letter-spacing: 2;
@@ -359,13 +400,17 @@ h5{
     top: 68vh;
     left: 20.5vw;
     line-height: 3.8rem;
-    width: 28vw;
+    width: 38vmax;
 }
 
 .swiper{
     position: absolute;
     left: 5.2vw;
     z-index: 100;
+}
+.swiper-slide:nth-child(4) img {
+    position: relative;
+    right: 5vw;
 }
 .swiper-button-next {
   background: url(../img/next.png) no-repeat;
