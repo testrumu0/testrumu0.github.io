@@ -15,6 +15,7 @@ html,body{
 @media screen and (min-width : 1920px){
     html,body{font-size:80%;}
     .sec2_con .about td{font-size:1.8rem;}
+    .sec3_title{margin-right: 1.5vw;}
     .sec5 td{font-size: 1.9rem;}
     .swiper-slide:nth-child(-n+3) .sec4_img img{width:42vw; position: relative; right: -2.5vw;}
     .swiper-slide:nth-child(4) .sec4_img img{width:47vw; position: relative; right: 1.5vw;}
@@ -25,24 +26,19 @@ html,body{
 /*768-1024사이tablet가로*/
 @media screen and (min-width : 768px) and (max-width : 1024px) and (orientation: landscape){
     html,body{font-size:55%;}
-    .sec2_title, .sec3_title{font-size: 3.5rem;}
-    .about_title{visibility: hidden;}
-    .title1::after{
-          content: 'Pro';
-          display: block;
-          visibility: visible;
+    .sec2_title{font-size: 3.5rem;}
+    .about_title{
+        position: relative;
+        left:21vw;
+        top: -5vh;
     }
-    .title2::after{
-          content: 'Edu';
-          display: block;
-          visibility: visible;
-    }
-    .title3::after{
-          content: 'Lic';
-          display: block;
-          visibility: visible;
+    .sec2_con table{
+        position: relative;
+        top:4vh;
+        left: -23.7vw;
     }
     .sec3{background: #fcf5ef;}
+    .sec3_title{display: none;}
     .sec3_con{text-align: center; margin-left: 15vmax;}
     .bg_box3{display: none;}
     .swiper-slide:nth-child(-n+3) .sec4_img img{width:42vw;}
@@ -60,16 +56,16 @@ html,body{
     .sec5{background-position: center;}
 }
 /*320-500사이mobile*/
-@media screen and (min-width : 320px) and (max-width : 500px){
+@media (min-width : 320px) and (max-width : 500px){
     html,body{font-size:55%;}
     #quick{display: none;}
     .sec1_title, .sec1 hgroup{text-align:center;}
-    .sec1_title{margin-right: 24vw; z-index: 2;}
-    .sec1 hgroup h1{margin-right: 3.8vw;}
+    .sec1 h1{position: absolute; right: 13vw; z-index: 2;}
+    .sec1 hgroup h1{right:7vw;}
     .sec1 hgroup h5{
-        position: absolute;
+        position: relative;
         top: -9.3vh;
-        left: 15vw;
+        left: -23vw;
     }
     .bg_box1{display: none;}
     .bg_mobile{
@@ -81,21 +77,68 @@ html,body{
         left:8.5vw;
         opacity: 0.93;
     }
-    .sec2_title, .about_title{display: none;}
+    .sec2 h1{
+        position: absolute;
+        top:17vh;
+        left:31vw;
+        z-index: 3;
+    }
+    .about_title{
+        position: relative;
+        left:56vw;
+        top: -5vh;
+    }
+    .sec2_con table{
+        position: relative;
+        top: 11vh;
+        right: 76.8vw;
+        text-align: center;       
+    }
+    .sec2 .bg_box2{
+        position: absolute;
+        right:9.5vw;
+    }
     .sec3 .bg_box3{display: none;}
+    .sec3 h1{
+        position: absolute;
+        top:77vh;
+        right: 30.8vw;
+    }
     .sec3_con{margin-left: -9.5vw;}
+    .sec3_con .sec3_top li:nth-child(3){padding-left:1.7vw;}
     .sec3_con .sec3_bottom li:nth-child(3){padding-left:3vw;}
     .vertical_line{display: none;}
-    .swiper-slide:nth-child(-n+3) .sec4_img img{
-        width:42vw;
+    .sec4{text-align: center;}
+    .swiper-slide:nth-child(-n+4) .sec4_img img{
+        width:57vw;
         position: absolute;
-        top: 39vh;
+        left: -28vw;
     }
-    .sec4_title, .sec4_btn{margin-left: 5vw; margin-top: -13vh;}
-    .sec4_btn{}
-    .sec4_txt{
-        margin-left: -15vw;
+    #mobile_img img{
+        width:27vw;
+        position: absolute;
+        top:-5vh;
     }
+    #mobile_img img:nth-child(1){
+        position: relative;
+        left: -33vw;       
+    }
+    #mobile_img img:nth-child(2){
+        position: absolute;
+        right: 4vw;       
+    }
+    .sec4_title, .sec4_btn{margin: 34vh 0 0 23vw;}
+    .sec4_btn button{font-size:1.2rem;}
+    .sec4_txt{display: none;}
+    .sec5 h1{font-size: 11.2rem;}
+    .sec5_con td{
+        font-size: 2.2rem;
+        text-align: center;
+        position: relative;
+        top:-11vh;
+        left: -7vw;
+    }
+    .sec5_con td img{width: 5.9vw;}
 }
 
 a:link, a:visited {
@@ -245,26 +288,27 @@ h5{
 }
 .sec2_con{
     position: absolute;
-    left: 45vw;
+    left:45vmax;
     top: 33.5vh;
     z-index: 3;
 }
 .sec2_con .about{
-    width: 47vw;
-    margin: 0 auto;
+    width: 88vmax;   
 }
 .sec2_con .about td{
     padding-bottom: 2vh;
+/*    width:55vmin;*/
 }
 .sec2_con .about tr:nth-child(3) td{
-    padding: 10vh 0;
+    padding: 10vmin 0;
 } 
 .sec2_con .about_title{
     font: 1.8rem '5Medium';
     letter-spacing: 5;
+    width: 25vmin;
 }
 .bg_box2{
-    width: 63vw;
+    width: 63vmax;
     height: 100%;
     position: absolute;
     top:0;
@@ -293,11 +337,11 @@ h5{
     background-color: #fcf5ef;
 }
 .sec3_title{
-    position: relative;
+    position: absolute;
     top: 65vh;
+    right: 9.5vw;
 /*    margin: 0 7vw;*/
     z-index: 3;
-    text-align: center;
 }
 .sec3_con{
     position: absolute;
@@ -374,7 +418,7 @@ h5{
     border: solid 1.3px #000;
     border-radius: 7px;
     background-color: #fcf5ef;
-    width: 13vmax;
+    width: 14vmax;
     height: 8vh;
     color: #000;
     letter-spacing: 2;
