@@ -29,13 +29,13 @@ html,body{
     .sec2_title{font-size: 3.5rem;}
     .about_title{
         position: relative;
-        left:21vw;
+        left:25.4vmin;
         top: -5vh;
     }
     .sec2_con table{
         position: relative;
         top:4vh;
-        left: -23.7vw;
+        left: -25.5vmin;
     }
     .sec3{background: #fcf5ef;}
     .sec3_title{display: none;}
@@ -48,9 +48,9 @@ html,body{
     .sec4_btn button{font-size:1.2rem;}
     .sec4_title, .sec4_btn{margin-left: 1.8vw;}
     .sec4_title, .sec4_btn, .sec4_txt{text-align: center;}
-    .sec4_txt{margin-left: 16vw; margin-top: 2.5vh;}
+    .sec4 .sec4_txt{position: absolute; left: 51vmin; top:75vmin;}
     .vertical_line{display: none;}
-    .sec5_con{margin-left: 5vw;}
+    .sec5 .sec5_con{position: absolute; left: 43vmin;}
     .sec5_txt{font-size: 2.3rem;}
     .sec5_icon img{width: 3.5vw;}
     .sec5{background-position: center;}
@@ -297,7 +297,6 @@ h5{
 }
 .sec2_con .about td{
     padding-bottom: 2vh;
-/*    width:55vmin;*/
 }
 .sec2_con .about tr:nth-child(3) td{
     padding: 10vmin 0;
@@ -318,7 +317,6 @@ h5{
 }
 .b_line{
     display: none;
-/*    width: 7vw;*/
     height: 0.9vh;
     background-color: #6db5ca;
     position: relative;
@@ -340,7 +338,6 @@ h5{
     position: absolute;
     top: 65vh;
     right: 9.5vw;
-/*    margin: 0 7vw;*/
     z-index: 3;
 }
 .sec3_con{
